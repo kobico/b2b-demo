@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+#registerOrg {
+  $textColor: aliceblue;
+  .gigya-screen {
+    h1, h2, label span {
+      color: $textColor!important;
+    }
+  }
+  h1.gigya-screen-caption {
+    color: $textColor!important;
+  }
+}
+$strongBlue: #173250;
+input[type=submit], .gigya-screen-dialog-top {
+  background:$strongBlue!important;
+}
+a {
+  color: $strongBlue!important;
+}
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+.small-spacer {
+  width: 50px;
+}
